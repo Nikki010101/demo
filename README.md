@@ -3,15 +3,18 @@
 Project1 is a Spring Boot-based RESTful API for managing items. The API allows users to perform CRUD (Create, Read, Update, Delete) operations on items stored in a MySQL database.
 ### Set Up
 In Spring.io generate a folder by adding necessary details and dependencies per requirement. As prerequisites we need Java, Maven, MySQL. Build the Project, The API was runned at http://localhost:8080/items. 
-MySQL Database:
-Create a database schema in MySQL, Configure Database in application.properties:
-spring.datasource.url=jdbc:mysql://localhost:3306/jpa_project
-spring.datasource.username=user
-spring.datasource.password=password
-also add, 
-spring.jpa.hibernate.ddl-auto=create
-spring.jpa.show-sql=true
+
+* MySQL Database:
+  * Create a database schema in MySQL, Configure Database in application.properties:
+  * `spring.datasource.url=jdbc:mysql://localhost:3306/jpa_project`
+  * `spring.datasource.username=user`
+  * `spring.datasource.password=password`
+
+
+  * `spring.jpa.hibernate.ddl-auto=create`
+  * `spring.jpa.show-sql=true`
 ### APIs
+```
 1. Get All Items
 URL: /items
 Method: GET
@@ -136,6 +139,6 @@ URL: /items/delete/{itemId}
 Method: DELETE
 Description: Deletes an item from the inventory by ID.
 Example Request URL:/items/delete/1
-
+```
 
 
